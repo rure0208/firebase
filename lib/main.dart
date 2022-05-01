@@ -36,7 +36,7 @@ class MyForms extends StatelessWidget {
         'home': (_) => const HomePage(),
       },
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Color.fromARGB(255, 34, 34, 34),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 34, 34, 34),
         appBarTheme: const AppBarTheme(
           elevation: 0,
           color: Colors.blueGrey,

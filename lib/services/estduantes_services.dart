@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 
 //dart code
 class EstudianteServices extends ChangeNotifier {
+  // ignore: non_constant_identifier_names
   final String _MiUrl = 'estudiante-1676a-default-rtdb.firebaseio.com';
   final List<Estudiante> productos = [];
 //Estudiante tipo de dato

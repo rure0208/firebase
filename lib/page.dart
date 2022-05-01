@@ -1,9 +1,7 @@
 import 'package:firebase/services/estduantes_services.dart';
 import 'package:firebase/ventana2.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'models/products.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,7 +9,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final datosAlumno = Provider.of<EstudianteServices>(context);
-
     return Scaffold(
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 181, 52, 43),
@@ -36,7 +33,7 @@ class HomePage extends StatelessWidget {
             var email = datosAlumno.productos[index].email;
             return ListTile(
               contentPadding:
-                  EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
+                  const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
               enabled: true,
               onLongPress: () {
                 Navigator.push(
